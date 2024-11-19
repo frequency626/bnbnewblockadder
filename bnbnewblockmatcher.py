@@ -5,7 +5,7 @@ bsc_rpc_url = "https://bsc-dataseed.binance.org/"  # Public BSC RPC
 web3 = Web3(Web3.HTTPProvider(bsc_rpc_url))
 
 # Check if connected
-if not web3.isConnected():
+if not web3.is_Connected():
     raise Exception("Failed to connect to Binance Smart Chain")
 
 # Get wallet details from user input
